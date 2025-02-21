@@ -4,6 +4,8 @@ FROM node:18-alpine
 # Enable Corepack (to manage Yarn version)
 RUN corepack enable
 
+RUN apk add --no-cache git
+
 # Set the working directory inside the container
 WORKDIR /app
 
